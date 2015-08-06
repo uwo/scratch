@@ -57,5 +57,8 @@
         (recur sorted-col (rest ordering))))))
 
 
+
+#_(clojure.pprint/pprint col)
 #_(clojure.pprint/pprint (repetitive-sort col compound-sort))
+#_(clojure.pprint/pprint (repetitive-sort col (reverse compound-sort)))
 #_(clojure.pprint/pprint (sort (->multi-comparator compound-sort) col))
