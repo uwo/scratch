@@ -10,5 +10,14 @@
                  [clj-http "2.0.1"]
                  [http-kit "2.1.19"]
                  [org.clojure/core.async "0.2.374"]
-                 [instaparse "1.4.1"]]
+                 [instaparse "1.4.1"]
+                 [com.datomic/datomic-free
+                  "0.9.5561.50"
+                  ;"0.9.5530"
+                  :exclusions [com.google.guava/guava
+                               commons-codec
+                               joda-time
+                               org.slf4j/slf4j-log4j12
+                               org.slf4j/slf4j-nop]]
+                 ]
   :profiles {:dev {:source-paths ["dev"]}})
