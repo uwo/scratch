@@ -32,5 +32,5 @@
 #_(g' 1 {::z 1})
 
 
-(def asdf (partial 
+(def asdf (partial
 

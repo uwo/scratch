@@ -7,7 +7,7 @@
 
 (def parser (insta/parser grammar))
 
-(comment 
+(comment
   (parser "put pie in bag")
   (insta/parses parser "put pie in bag" :partial true)
   )

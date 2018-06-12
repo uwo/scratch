@@ -184,7 +184,7 @@
           result))))
 
   (reduce ((mapping inc) conj) [] [1 2 3])
-    
+
   (clojure.repl/source map)
 
   (defn map-core
@@ -203,7 +203,7 @@
     (clojure.repl/source take)
 
     (clojure.repl/source partition-by)
-    
+
     (clojure.repl/source mapcat)
 
   )
@@ -230,7 +230,7 @@
   ;; see sequence tab
   ;; pull - lazy sequences
   ;; push - transducers - supply input and then the logic run
-  
+
   ;; if in a single step you return an infinite sequence, or something
   ;; that consumes all of memory, this won't work
 

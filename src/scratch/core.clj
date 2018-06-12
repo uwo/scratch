@@ -7,7 +7,7 @@
   [{:keys [id res id-fn]}]
   (prn id res id-fn))
 
-(comment 
+(comment
   (def preds [even? #(> % 4)])
 
   (filter #((apply every-pred preds) %) (range 11))
@@ -42,7 +42,7 @@
 
 (defonce r (read-string (slurp "resources/result")))
 
-(comment 
+(comment
   (map :ti.bill/pickup r)
   (map :ti.freight-bill/pro r)
 

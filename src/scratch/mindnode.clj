@@ -18,7 +18,7 @@
                  (suf/readj filename #_{:key-fn identity :value-fn identity})
                  ;(walk/postwalk-replace smap)
                  ;vector
-                 )] 
+                 )]
     txdata
     ;@(d/transact conn txdata))
   ))

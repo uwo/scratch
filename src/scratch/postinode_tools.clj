@@ -4,7 +4,7 @@
             [clojure.pprint :refer [pprint]]
             [clojure.string :as s]))
 
-(defn rd 
+(defn rd
   [filepath]
   (with-open [rdr (io/reader filepath)]
     (vec (line-seq rdr))))
@@ -54,7 +54,7 @@
 (defn find-potential-matches
   [c]
   (let [words (s/split c #" ")]
-    (filterv (partial segment-match words) 
+    (filterv (partial segment-match words)
              (filter invoice? emails))))
 
 (defn one?
@@ -65,7 +65,7 @@
   [e]
   (cond
     (one? e) (first e)
-    (empty? e) "NOT FOUND" 
+    (empty? e) "NOT FOUND"
   :else e))
 
 (defn zipmap-sorted
@@ -87,7 +87,7 @@
     (binding [*out* w]
       (clojure.pprint/write data))))
 
-(comment 
+(comment
 
   (in-ns 'scratch.postinode-tools)
 

@@ -10,7 +10,7 @@
 ;; 1. A counter entity must store the current value and a nonce.
 ;; 2. The current value must be incremented AND A UNIQUE NONCE ADDED whenever
 ;;    the counter value is retrieved.
-;; 
+;;
 ;; The nonce is to guarantee that a counter value is never read more than once
 ;; in a transaction. Since transaction functions only have access to the
 ;; database before the transaction, they cannot know if other assertions in

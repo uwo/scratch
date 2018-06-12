@@ -17,7 +17,7 @@
           seed ((->comparator dir keyfn) x y)]
       (reduce
         (fn [acc [keyfn dir]]
-          (if (= acc 0) 
+          (if (= acc 0)
             ((->comparator dir keyfn) x y)
             acc))
         seed
@@ -26,7 +26,7 @@
 (defn ->multi-comparator
   [sort-bys]
   (fn [x y]
-    (loop [acc 0 
+    (loop [acc 0
            ordering sort-bys]
       (if-not (= acc 0)
         acc

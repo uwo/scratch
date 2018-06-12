@@ -33,7 +33,7 @@
 ;;(s/exercise #(re-matches #"SKU-[0-9]+" %))
 (s/valid? #(re-matches #"SKU-[0-9]+" %) "SKU-1231")
 
-;; work around for file-less namespace aliasing 
+;; work around for file-less namespace aliasing
 (create-ns 'my.domain)
 (alias 'd 'my.domain)
 
@@ -51,7 +51,7 @@
 
 ;; lookup: regular expression derivatives
 
-;; s/or appears to short circuit 
+;; s/or appears to short circuit
 
 ;; s/*explain-out*
 ;; s/explain-printer
@@ -265,7 +265,7 @@
 
 #_(gen/sample (s/gen ::kwid) 5)
 
-(s/def ::kwid2 
+(s/def ::kwid2
   (s/with-gen
     (s/and qualified-keyword?
            #(str/starts-with? (namespace %) "foo")

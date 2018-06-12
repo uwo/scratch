@@ -16,7 +16,7 @@
   (edn/read-string {:readers *data-readers*} (readf filename)))
 
 (defn readj
-  "Read json resource file." 
+  "Read json resource file."
   ([filename] (readj filename nil))
   ([filename opts]
    (json/read-str (readf filename)) (select-keys opts [:key-fn :value-fn])))

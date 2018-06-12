@@ -18,9 +18,9 @@
   [params]
   (letfn [(encode [s] (js/encodeURIComponent (str s)))]
     (s/join "&"
-      (mapcat 
+      (mapcat
         (fn [[k v]]
-          (if (sequential? v) 
+          (if (sequential? v)
             (map #(str (encode k) "[]=" (encode %)) v)
             [(str (encode k) "=" (encode v))]))
         params))))
