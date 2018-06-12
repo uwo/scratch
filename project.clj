@@ -9,6 +9,7 @@
                  [com.novemberain/monger "3.0.2"]
                  [com.stuartsierra/component "0.3.1"]
                  [clj-http "2.0.1"]
+                 [clucy "0.4.0"]
                  [http-kit "2.1.19"]
                  [org.clojure/core.async "0.3.465"]
                  [instaparse "1.4.1"]
@@ -20,6 +21,5 @@
                                commons-codec
                                joda-time
                                org.slf4j/slf4j-log4j12
-                               org.slf4j/slf4j-nop]]
-                 ]
+                               org.slf4j/slf4j-nop]]]
   :profiles {:dev {:source-paths ["dev"]}})
