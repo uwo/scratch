@@ -1,0 +1,9 @@
+[{:db/ident :mn.node/name,
+  :db/doc "Node text",
+  :db/cardinality :db.cardinality/one,
+  :db/valueType :db.type/string,
+  :db/fulltext true}
+ {:db/ident :mn.node/children,
+  :db/doc "Node text",
+  :db/cardinality :db.cardinality/many,
+  :db/valueType :db.type/ref}]
